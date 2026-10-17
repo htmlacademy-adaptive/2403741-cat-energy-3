@@ -1,0 +1,33 @@
+.educational-provider {
+  @include font-height-color-size(20, $text-color, 16);
+  text-decoration: none;
+  display: flex;
+  gap: 24px;
+
+  &:hover .educational-provider__logo {
+    fill: $color-primary;
+  }
+
+  &:active .educational-provider__logo {
+    fill: $color-primary;
+    opacity: 30%;
+  }
+
+  &:active .educational-provider__name {
+    opacity: 30%;
+  }
+
+  &:focus-visible .educational-provider__logo {
+    fill: $color-primary;
+  }
+
+  @media (min-width: $break-point-tablet) {
+    justify-content: end;
+    gap: 22px;
+  }
+}
+
+.educational-provider__logo {
+  flex-shrink: 0;
+  fill: $color-social;
+}

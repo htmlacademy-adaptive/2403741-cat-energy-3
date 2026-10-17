@@ -1,0 +1,7 @@
+.main {
+  flex-grow: 1;
+
+  @media (min-width: $break-point-desktop) {
+    display: contents;
+  }
+}
